@@ -3,10 +3,10 @@ import psycopg2
 
 conn = psycopg2.connect(
     host=st.secrets["DB_HOST"], 
-    database=st.secrets["DB_NAME"],
+    database=st.secrets["DB_DATABASE"],
     user=st.secrets["DB_USER"],
-    password=st.secrets[DB_PASSWORD],
-    portpassword=st.secrets[DB_PORT]
+    password=st.secrets["DB_PASSWORD"],
+    portpassword=st.secrets["DB_PORT"]
 )
 
 cursor = conn.cursor()
