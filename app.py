@@ -6,7 +6,7 @@ conn = psycopg2.connect(
     database=st.secrets["DB_DATABASE"],
     user=st.secrets["DB_USER"],
     password=st.secrets["DB_PASSWORD"],
-    portpassword=st.secrets["DB_PORT"]
+    port=st.secrets["DB_PORT"]
 )
 
 cursor = conn.cursor()
