@@ -30,4 +30,4 @@ if st.button("Cadastrar"):
         (nome, "11111111", email)
     )
     conn.commit()
-    st.sucess("Cadastrado com sucesso!")
+    st.success("Cadastrado com sucesso!")
